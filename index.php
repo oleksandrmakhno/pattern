@@ -7,6 +7,9 @@ $res = scandir('.');
 $ignoreList = [
     'index.php',
     '.idea',
+    '.git',
+    '.gitignore',
+    'README.md',
 ];
 $res = array_diff($res, $ignoreList);
 foreach ($res as $item) {
